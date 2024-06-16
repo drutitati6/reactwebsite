@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.person
+{
+  border: 1px solid black ;
+  background-color: rosybrown;
+  align-items: center;
+  height: 400px;
+  width: 400px;
+  padding: 10px 10px 10px 10px;
+  color: aqua;
+
+}
+.container {
+ display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 20px;
+  height: auto;  /*Allow the container to expand based on content */
+  max-width: 100%; /* Ensure the container doesn't exceed the viewport width */
+  overflow-y: hidden; /* Enable vertical scrolling if content exceeds viewport height */
+  overflow-x: hidden;
+  margin: 0;
+  
+}
+
+.container > div {
+  width: calc(13.33% - 10px);
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding: 10px;
+  height: 250px;
+  overflow-x: hidden;
+  margin: 0;
+ 
+}
